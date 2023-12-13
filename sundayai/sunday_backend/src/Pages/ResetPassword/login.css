@@ -1,0 +1,147 @@
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: 300px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: 200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: 100px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: 0px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -100px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(1.2);
+  }
+  
+  50%{
+    transform: scale(1.6);
+  }
+  
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+.loginFormHeader{
+  background:linear-gradient(90deg, #3561a7, #85aafc);;
+  height: 100%;
+  width:40%; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleContainer{
+  color: white;
+  position: absolute;
+  top:0;
+}
+
+.sundayLoginHalf{
+  height: 100%;
+  width:60%; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sundayLoginHalf{
+  background-image: "../images/SundayImage.png";
+  background-size: cover;
+  background-position: 50%;
+}
+
+.loginForm{
+  background-color:white; 
+  height:450px;
+  width:400px; 
+  position:absolute; 
+  bottom:0%; 
+  right:0%;
+  transform: translate(-70%, -50%);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+  border-radius: 15px;
+
+}
+
+.loginInput{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.loginInputFocus:focus{
+  outline: none;
+}
+
+.black-background{
+  background-color: black;
+}
+
+.fancy-progress-bar{
+  background-color: red;
+}
+
+.Toastify__toast-theme--dark {
+  /*background-color: rgb(255, 255, 255) !important;*/
+}
